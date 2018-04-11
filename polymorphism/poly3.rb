@@ -68,3 +68,58 @@
 	# , State: Karnataka
 
 
+class Employee
+	def person(info)
+		info.person
+end
+end
+
+class President
+	def person
+		puts " Prsident Details"
+		puts "--------------------"
+		puts "enter the fname"
+		@fname=gets.chomp
+		puts "enter the lname"
+		@lname=gets.chomp
+		puts "enter the age"
+		@age=gets.to_i
+		puts "Enter the city"
+		@city=gets.chomp
+		puts "Enter the state"
+		@state=gets.chomp
+		puts "************************************"
+		puts "name :#{@fname} #{@lname}"
+		puts  "Age : #{@age}"
+		puts "city: #{@city} state: #{@state}"
+		puts "*************************************"
+	end
+end
+class Staff
+	def person
+		puts "Staff Details"
+		puts "-----------------------------"
+		puts "enter the fname"
+		@fname=gets.chomp
+		puts "enter the lname"
+		@lname=gets.chomp
+		puts "enter the age"
+		@age=gets.to_i
+		puts "Enter the city"
+		@city=gets.chomp
+		puts "Enter the state"
+		@state=gets.chomp
+		puts "*************************************"
+		puts "name :#{@fname} #{@lname}"
+		puts  "Age : #{@age}"
+		puts "city: #{@city} state: #{@state}"
+		puts "**************************************"
+	end
+end
+
+
+emp=Employee.new
+prs=President.new
+ emp.person(prs)
+ stf=Staff.new
+ emp.person(stf)
