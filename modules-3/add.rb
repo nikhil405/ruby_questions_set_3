@@ -10,8 +10,8 @@
 # end
 
 
-module Add
-	def add(x,y)
+module sum
+	def sum(x,y)
 		z=x+y
 		puts "The add : #{z}"
 		p "================="
